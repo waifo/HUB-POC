@@ -1,0 +1,174 @@
+@import 'CdshubAdministration.module.scss';
+
+.CDSHubAdministration.ViewHomePage {
+
+  .hero_bg {    
+    background: url(https://microsoft.sharepoint.com/teams/dev_cdshubship/SiteAssets/images/home-page-background-image.png) no-repeat 95% top;
+    //background: #002050;
+    background-size: cover;
+    min-height: 700px;
+  }
+  .hero_title {
+    font-size: 2.75em;
+  }
+  .hero_container {
+    padding: 30px 90px 20px 74px;    
+    color: $white;
+  }
+  .hero_content {
+    line-height: 23px;
+    margin-bottom: 20px;
+  }
+  .tile_links {
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  .tile_links ul li {
+    display: inline;
+    padding-left: 20px;
+    color: $white;
+  }
+  .tile_links ul li a:link,
+  .tile_links ul li a:focus {
+    color: $white;
+    text-decoration: none;
+
+    &.active {
+      border-bottom: 1px solid $white;
+    }
+  }
+  .tile_links ul li a:hover,
+  .tile_links ul li a:active,
+  .tile_links ul li a:visited {
+    color: $white;
+    text-decoration: none;
+    border-bottom: 1px solid $white;
+  }    
+
+  ul.viewhome_nav {      
+    background:rgba(255,255,255,0.1);
+    margin-right: 100px;
+    height: 436px; 
+    overflow-y: auto;
+  li {  
+  color: rgba(255,255,255,1);
+  margin-bottom: 5px; 
+  padding-left: 15px;
+  padding-right: 5px;   
+      a {        
+        color: rgba(255,255,255,1);        
+        &:hover
+        {
+          cursor: pointer;
+          text-decoration: underline;          
+        } 
+      }  
+      &.home_nav_title {
+        font-size: 1.25em;
+        padding: 3px 0 2px 15px;
+        font-weight: 600;
+        color: $white;
+        background: $blue-text;
+        margin-bottom: 12px;
+        border: 1px solid $darkgrey;       
+      }
+    }
+  } 
+
+  /* Small Tiles CSS */
+  .home_sm_tile {
+    color: $white; 
+    height: 245px;
+    position: relative;
+    /* border: 1px solid grey; */
+    overflow: hidden;
+    background: $white;
+    cursor: pointer;
+  }
+  .sm_tile_img {
+    width: 100%;    
+    height: 100%;
+  }
+  .sm_tile_txt {
+    color: $white;   
+    background: rgba(0,120,215,0.6);
+    height: 115px;
+    overflow: hidden;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;     
+  }
+  .sm_tile_title {    
+    line-height: 16px;
+    font-weight: 600;
+    a{
+      text-decoration: none;
+      color: $white;
+      display: inline-block;
+      max-width: 85%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  .sm_tile_desc {   
+    font-size: 0.85em;
+    line-height: 16px;
+    height: 52px;   
+    overflow: hidden;
+  }
+  .sm_tile_heart_icon {    
+    padding-right: 5px;
+  }
+  /* End of Small Tiles  CSS */
+
+  /* Expanded Tile  CSS */
+
+  .home_tile {
+    color: $white; 
+    height: 510px;     
+    /*border: 1px solid grey;*/
+    overflow: hidden;
+    background: $white;
+    margin-left: 15px;
+  }
+  .tile_img {
+    width: 100%;    
+    height: 100%;
+  }
+  .tile_data {
+    padding: 80px 20px 10px 20px;
+  }
+  .tile_txt {
+    color: $black;   
+    background:rgba(255, 255, 255,1);
+    height: 510px;
+    overflow: hidden;              
+  }
+  .tile_news_title {
+    color: $grey; 
+    font-size: 1.2em;
+  }
+  .tile_title {    
+    font-weight: 700;
+    font-size: 1.2em;    
+  }
+  .tile_desc {   
+    line-height: 16px;
+    height: 200px;
+    overflow: hidden;
+  }
+  .more_link {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;  
+  }
+  .filled_heart_icon {
+    position: absolute;
+    bottom: 30px;
+    right: 120px;
+    color:$red;    
+  }
+/* End of Expanded Tile  CSS */ 
+}

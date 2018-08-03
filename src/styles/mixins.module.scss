@@ -1,0 +1,25 @@
+@import 'variables.module.scss';
+
+
+%border-class {border: 1px solid $grey};
+%bottom-border-grey {border-bottom: 1px solid $grey}
+%top-border-grey {border-top: 1px solid $grey}
+%bottom-border-light-grey {border-bottom: 1px solid $hover-bg}
+%top-border-light-grey {border-top: 1px solid $hover-bg}
+%red-border-class {border: 1px solid $red};
+
+@mixin p-t($px) {padding-top: $px;}
+@mixin p-r($px) {padding-right: $px;}
+@mixin p-b($px) {padding-bottom: $px;}
+@mixin p-l($px) {padding-left: $px;}
+
+@mixin m-t($px) {margin-top: $px;}
+@mixin m-r($px) {margin-right: $px;}
+@mixin m-b($px) {margin-bottom: $px;}
+@mixin m-l($px) {margin-left: $px;}
+
+%page-separator-border {
+  border-color: $nav-border;
+  border-style: solid;
+  border-width: 0;
+}

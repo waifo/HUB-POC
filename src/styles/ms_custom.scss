@@ -1,0 +1,121 @@
+.inlineflex .ms-ChoiceField{
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.pivot_tabs{
+  .ms-Pivot-link {
+    //margin: 0px 10px 30px 0px!important;//changes
+    margin: 0px 10px 15px 0px!important; //changing for reducing space and scroll on the page
+    min-width: 150px !important;
+    background-color: #E6E6E6 !important;
+    font-size: 15px;
+    &.is-selected {
+      background-color: #707B90 !important;
+      &::before {
+        border-color: #707B90 !important;
+      }
+    }
+    .ms-Button-flexContainer {
+      justify-content: center;
+    }
+  }
+}
+.docs-TextFieldExample label {
+  color: #999 ;
+}
+
+.checkbox_txt .ms-Checkbox-checkbox {
+  margin-right: 8px !important;
+}
+.checkbox_txt_color .ms-Checkbox-text {
+  color: #0078D7;
+}
+
+.dropzone_area {
+  border: none;   
+  max-width: 17%;
+  white-space: nowrap;
+  //margin-top: 10px; // changing for reducing vertical spacing on the page
+}
+
+.dropzone_image {
+  border: 1px solid #CCC;
+  /* width: 890px; */  
+  margin-top: 10px; // changing for reducing vertical spacing on the page
+  height: 150px;
+  overflow: hidden;
+}
+
+.dropzone_icon_area {
+  border: none;
+  margin-top: 28px;  
+  max-width: 75%;
+  white-space: nowrap; 
+}
+.dropzone_icon {
+  border: 1px solid #ccc;
+  width: 30px; 
+  margin-right: 20px;
+  height: 30px;
+  overflow: hidden;
+  float: left;
+}
+
+ul.admin_nav li div .ms-IconExample {
+  margin-right: 12px;
+}
+.ms-Fabric input, .ms-Fabric textarea {
+  background-color: transparent;
+}
+// links tab checkbox after linking pages
+i.ms-Check-circle {
+  font-size: 18px;
+}
+i.ms-Check-check {
+  font-size: 16px;
+}
+// keyword tag picker
+.ms-BasePicker-input {
+  height: 30px;
+  background-color: transparent;
+}
+.detailList_text_wrap .ms-DetailsRow-cell {
+  white-space: pre-line;
+}
+span.ms-Dropdown-optionText {
+  white-space: pre-line;
+  padding-left: 10px;
+}
+.ms-TextField-errorMessage>span {
+  font-size: 12px;
+}
+.dropdown_errmsg .ms-Dropdown-container::after{
+  content: '*';
+  color: #a80000;
+  position: absolute;
+  top: -8px;
+  right: 6px;
+}
+.ms-Dialog-main {
+ /*  width: 40%; */
+  max-height: 65%;
+}
+.ms-DetailsList .btn-link {
+  padding: 0;
+}
+.ms-Spinner--large {
+  width: 100px;
+  height: 100px;
+  border-width: 5px;
+}
+.ms-Spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}

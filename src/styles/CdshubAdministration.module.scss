@@ -1,0 +1,417 @@
+@import '_base.module.scss';
+
+.CDSHubAdministration {
+  color: $font-color;
+
+  .page_separator_left {
+    @extend %page-separator-border;
+    border-left-width: 1px;
+    @include p-l(30px);
+    @include m-l(-1px);
+  }
+  .page_separator_right {
+    @extend %page-separator-border;
+    border-right-width: 1px;
+  }
+
+  //Admin UI CSS
+  .admin_container { padding: 0px 90px 20px 55px; }
+ 
+  h1.page_title {
+    color: $white;
+    text-align: center;
+    @include p-t(80px);
+  }
+  h2.page_name {
+    @include p-t(30px);
+    @include p-b(20px); 
+    color: $darkgrey;   
+  }
+  h2.page_header {
+    @include p-t(30px);
+    font-weight: 400;    
+  }
+  
+  ul.admin_nav {
+      @include p-r(20px);
+
+    li {
+      font-size: 1.1em;
+      color: $black;
+      margin-bottom: 0px;      
+            &:hover
+            {
+            cursor: pointer;
+            text-decoration: none;
+            background: $hover-bg;
+          } 
+          div {
+            color: $black;
+            display: block;
+            padding: 6px 0 6px 20px;
+            max-width: 90%;
+            word-break: break-all;        
+          .icon { 
+              font-size: 14px;  
+              width: 15%;
+              vertical-align: top;       
+            }
+            span.link_content_holder {
+              width: 85%;
+              display: inline-block;
+            }
+            .empty_icon {width: 15%;}
+
+            &.landing_page_title {
+              display: inline-block;
+              width: 80%;
+              font-weight: 600;
+            }
+
+            &.sublanding_page_title {          
+              font-size: small;
+              .icon { 
+                width: 15%;
+                font-size: 12px;          
+              }
+              .empty_icon {width: 15%;}
+            }
+          }
+
+          .icon_add {
+            display: inline-block;
+            padding: 0px 5px;
+            color: $blue-text;
+            font-size: 18px;
+            font-weight: 700;
+            @include m-l(15px);
+
+            &:hover {
+              background: $blue-text;
+              color: $white;
+            }
+          }
+
+          &.left_nav_title {
+            font-size: 1.22em;
+            padding: 0 0 20px 20px;
+            font-weight: 500;
+            color: $grey;
+            &:hover {
+              background: none;
+              cursor: default;
+            }
+          }
+          &.custom_link {
+            border-top: 1px solid $nav-border;
+            margin-top: 15px;
+            
+              div {
+                cursor:pointer;
+                color: $blue-text;         
+                padding: 15px 0 15px 20px;
+                font-weight: 600;
+
+                .icon {width: 15%;}
+
+                .empty_icon {width: 15%;}     
+            }          
+            &:last-child {
+              border-bottom: none;
+              @include m-t(0px);
+            }
+          }
+    }
+}
+  .hero_img_container {margin: 10px 0 30px 0;}
+  
+  .row.admin_container {@include m-r(0)}
+  
+  .update_note {
+    color: $blue-text;
+    font-size: 0.75em;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+  .field_caption {
+    font-size: 2em;
+    font-weight: 500;
+    margin: 60px 0 30px 0;
+  }
+  .nav-link.active:after {display: none;}
+  
+  label {margin-bottom: 0.5rem;}
+  
+  .delete-link span {vertical-align: middle;}
+  
+  .form-check-input {margin-top: 0.4rem;}
+  
+  .form-check-input.is-active {margin-top: 0;}
+  
+  .active:after {display: none;}
+  
+  .alert-success {
+    display: none;
+    strong {
+      font-weight: 500;
+    }
+  }
+  .input-group>.custom-select:not(:last-child),
+  .input-group>.form-control:not(:last-child) {
+    border-top-right-radius: 0.25rem;
+      border-bottom-right-radius: 0.25rem;
+  }
+  .glyphicon {@include p-r(5px)}
+
+  .glyphicon_plus {font-size: .750em;}
+
+  .upload_icon_txt {
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 5px;
+  }
+  h2.sub_title, h3.field_label {
+    color: $grey;
+    @include p-b(10px);
+    span {
+      font-weight: 400;
+      color: $black}
+  }
+  
+  /* Bootstrap Overrides */
+  .custom_tab {
+    background: $lightgrey;
+    color: $font-color;
+    border-radius: 0;
+    min-width: 150px;
+    text-align: center;
+    @include m-r(10px);
+  }
+  .custom_delete_btn {
+    color: $blue-text;
+    border-color: $blue-text;
+  }
+  .hero_bg_img_txt {
+    color: $darkgrey;
+    font-size: .750em;
+    font-weight: 500;
+    @include p-t(5px)
+  }
+
+  ///////////////////////////////////////////////////// css for links
+  .glyphicon_select {
+    font-size: 150%;
+    vertical-align: middle;
+    line-height: 1;
+    color: $blue-text;
+  }
+  .align_middle {vertical-align: middle;}
+
+  .justify_content_between {
+    display: flex;
+    justify-content: space-between;
+  }
+  .advanced_search_input,
+	.form-control.advanced_search_input
+	{
+		width: 265px;
+		height: 24px;	
+		background: url('https://microsoft.sharepoint.com/teams/dev_cdshubship/SiteAssets/images/search-icon.svg') no-repeat 97% 50% #FFF;
+		background-size: 6%;
+    padding-right: 25px;
+    margin-bottom: 20px;
+	}
+  .advanced-search .form-inline {justify-content: flex-end;}
+  
+  ////////////////////////////////////////// CSS for info section and focus area
+  .sub_field_label {
+    font-size: .75em;
+    color: $grey;
+  }
+  .td_border_btm td {
+    border-top: none;
+    border-bottom: 1px solid $lightgrey2 !important;
+  }
+  .td_border_btm tr:first-child td {
+    border-top: 1px solid $lightgrey2 !important;
+  } 
+  table.links_table {
+    thead>tr>th {
+      color: $grey;
+      @include p-b(10px);
+      border: none;
+      cursor: pointer;
+    }
+    tbody>tr>td {
+      border: none;
+      padding-bottom: 10px;
+      width: 200px;
+      max-width: 200px;
+    }
+    tbody>tr>td:last-child {
+      width: 50px;
+    }
+  }
+  
+  .links_table .ms-TextField-errorMessage {display: none;}
+
+  .pictureDimension {width: 100%}
+
+  .iconDimension {
+    width: 100%;
+    height: 100%;
+  }  
+ 
+  .btn_preview {
+    border: 1px solid $blue-text;
+    color: $blue-text;
+    padding: 1px 10px;
+    font-size: 14px;
+  }
+
+  .loader_container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    z-index: 1000;
+    background-color: $darkgrey;
+    margin: auto;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+  }
+  // media queries
+  @media (min-width:768px) {
+    .optional_text {
+      padding-top: 33px;
+      font-size: .875em;
+    }
+    .dropdown_errmsg {
+      height: 50px;
+    }
+  }
+}
+
+a.carousel-control.left {display: none !important;}
+a.carousel-control.right {display: none !important;}
+
+:global {
+	.myDialog {
+		border:1px solid $grey;
+		box-shadow: none !important;
+    max-width: 80%;
+    overflow-x: hidden;
+    .ms-DetailsRow-check--isHeader, i.ms-Check-check {
+      opacity: 1;
+    } 
+		.ms-Dialog-title {
+			background-color: $hover-bg;
+			@extend %bottom-border-grey;
+			color: $black;
+			padding: 10px 15px;
+			font-weight: 400;
+			font-size: 1.3em;
+		}
+		.selected-link-header {
+			@extend %top-border-grey;
+    }
+    .ms-Dialog-button--close {
+      padding-bottom: 10px;
+      &:hover {
+        background-color: transparent;
+      }
+    }
+		.ms-Dialog-inner {
+			min-width: 320px;
+			padding: 0;
+			.ms-DetailsList {
+				padding: 20px 30px 0;
+			}
+			.ms-Dialog-actions  .ms-Dialog-actionsRight {
+				margin: 0;
+				padding: 20px;
+				@extend %top-border-light-grey;
+			}
+			.dialog_sub_header {
+				padding: 15px;
+				@extend %bottom-border-light-grey;
+			}
+			.ms-Icon--DrillDownSolid{
+        font-size: 180%;
+        cursor: pointer;			
+				&:before{
+					content: "\F533" !important;
+          color:  $blue-text;         
+        }
+        
+      }
+      .DrillDownSolidUp {
+        transform: rotate(180deg);
+      }
+      .btn_up_down {
+        background-color: transparent;
+        padding: 0;
+        outline: none;
+        border: 0;
+      }
+      .mrg_topbtm_20 {margin: 20px 0;}     
+      .mrg_rgt_20 { margin-right: 20px; }
+      .mrg_top_30 { margin-top: 30px; }
+      .sort_icon { 
+        padding-top: 8px;
+        cursor: pointer;
+      }
+      
+			.ms-DetailsHeader {
+				border-bottom: 0;
+				.ms-DetailsHeader-cell {
+					color: $blue-text;
+					font-size: 1.2em;
+					font-weight: bold;
+				}
+      }
+      
+		}
+  }
+  
+  // manageLinkDialogue css
+  .manageLinkDialogue {
+    .ms-Dialog-action:first-child {
+      float: left;
+    }
+    table.manage_link_table {
+      thead>tr>th {
+        color: $grey;
+        border: none;
+        padding-bottom: 10px;
+      }
+      tbody>tr>td {
+        border: none;
+        width: 200px;
+        max-width: 200px;
+        .btn-link {
+          padding: 0 12px;
+        }
+      }
+      tbody>tr>td:last-child {
+        width: 50px;
+      }
+    }
+    .ms-Dialog-actions .btn-link { 
+      padding: 4px 12px 0 0;
+      font-size: 16px;
+    }
+    .ms-Dialog-inner .ms-Dialog-content {
+      padding: 0 20px;
+    }
+    .glyphicon-plus {
+      padding-right: 6px;
+    }
+    .ms-Icon--Info {
+      vertical-align: middle;
+      margin-left: 10px;
+    } 
+  }
+}

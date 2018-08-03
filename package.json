@@ -1,0 +1,50 @@
+{
+  "name": "HUB-POC",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "npm run build",
+    "build": "webpack -d && webpack-dev-server --content-base src/ --watch --inline --hot --port 3000",
+    "build:prod": "webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waifo/HUB-POC.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/waifo/HUB-POC/issues"
+  },
+  "homepage": "https://github.com/waifo/HUB-POC#readme",
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/react": "^15.6.6",
+    "@types/react-dom": "^15.5.6",
+    "axios": "^0.18.0",
+    "copy-webpack-plugin": "^4.5.2",
+    "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "node-sass": "^4.9.2",
+    "office-ui-fabric-react": "^5.103.0",
+    "postcss-loader": "^2.1.6",
+    "react": "^15.6.2",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^15.6.2",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.21.0",
+    "ts-loader": "^4.4.2",
+    "typescript": "^3.0.1",
+    "webpack": "^4.16.3"
+  },
+  "devDependencies": {
+    "@types/node": "^10.5.5",
+    "babel-preset-react": "^6.24.1",
+    "mini-css-extract-plugin": "^0.4.1",
+    "react-adal": "^0.4.18",
+    "typings-for-css-modules-loader": "^1.7.0",
+    "webpack-cli": "^3.1.0"
+  }
+}

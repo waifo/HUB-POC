@@ -1,0 +1,23 @@
+/* .SPPageChrome-app .commandBarWrapper, .ms-compositeHeader, div[data-automation-id="pageHeader"]  { display: none; } */
+ 
+.ControlZone {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.CanvasSection, .CanvasZone {padding: 0;} 
+.CanvasZone {
+    padding: 0;
+    max-width: 100%;
+}    
+/* aside[role=complementary] {display: none;}  */ //this is for footer components- like, views,sane for later etc
+/* .SPPageChrome #SuiteNavPlaceHolder {display: none !important;}
+#SuiteNavPlaceHolder {display: none !important;} */
+div#spPageCanvasContent ~ div {visibility: hidden;} //this is for footer comment section
+a.ms-Button.ms-Button--primary, button.ms-Button.sitePage-uservoice-button, .d-none {
+    display: none;
+}
+
+
+    
+    
+  

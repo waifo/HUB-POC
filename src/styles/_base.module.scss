@@ -1,0 +1,166 @@
+@import 'reset.module.scss';
+@import 'mixins.module.scss';
+
+.CDSHubAdministration {
+body {
+    font-family: 'Segoe UI', 'Open Sans', 'sans-serif';
+    font-size: 14px; /* = 0.875rem *//* 16px = 1rem */
+  }
+  h1, .h1 {
+    font-size: 2.25em;
+    font-weight: 300;
+  }
+  h2, .h2 {
+    font-size: 1.72em;
+    font-weight: 500;
+  }
+  h3, .h3 {
+    font-size: 1.14em;
+    font-weight: 600;
+  }
+  //h4, .h4 {}
+  h5, .h5 {
+    font-size: 0.625em;
+    font-weight: 300;
+  }
+  //h6, .h6 {}
+  
+  th {font-weight: 600 !important}
+
+  label {font-weight: normal}
+  
+  /*padding*/
+  .padd_rgt_0 { @include p-r(0) }
+  .padd_lftRgt_0 {
+    @include p-l(0);
+    @include p-r(0)
+  }
+
+  .padd_lftRgt_15 {
+    @include p-l(15px);
+    @include p-r(15px)
+  }
+
+  .padd_topbtm_20 {
+    @include p-t(20px);
+    @include p-b(20px)
+  }
+  
+  .padd_lft_0 { @include p-l(0) }
+  .padd_lft_5 { @include p-l(5px) }
+  .padd_lft_10 { @include p-l(10px) }
+  .padd_lft_20 { @include p-l(20px) }
+
+  .padd_rgt_5 { @include p-r(5px) }
+  .padd_rgt_10 { @include p-r(10px) }
+  
+  .padd_top_5 { @include p-t(5px) }
+  .padd_top_10 { @include p-t(10px) }
+  .padd_top_15 { @include p-t(15px) }
+  .padd_top_20 { @include p-t(20px) }
+  .padd_top_30 { @include p-t(30px) }
+  .padd_top_35 { @include p-t(35px) }
+  .padd_top_50 { @include p-t(50px) }
+
+  .padd_btm_2 { @include p-b(2rem) }
+  .padd_btm_20 { @include p-b(20px) }
+  
+  /*margins*/
+  .mrg_lft_0 { @include m-l(0) }
+  .mrg_lft_10 { @include m-l(10px) }
+  .mrg_lft_15 { @include m-l(15px) }
+  .mrg_lft_50 { @include m-l(50px) }
+  
+  .mrg_lftRgt_0 {
+    @include m-l(0);
+    @include m-r(0)
+  }
+  .mrg_topbtm_10 {
+    @include m-t(10px);
+    @include m-b(10px)
+  }
+  .mrg_topbtm_20 {
+    @include m-t(20px);
+    @include m-b(20px)
+  }
+  .mrg_topbtm_30 {
+    @include m-t(30px);
+    @include m-b(30px)
+  }
+  
+  .mrg_rgt_0 { @include m-r(0) }
+  .mrg_rgt_10 { @include m-r(10px) }  
+  
+  .mrg_btm_0 { @include m-b(0) }
+  .mrg_btm_5 { @include m-b(5px) }
+  .mrg_btm_10 { @include m-b(10px) }
+  .mrg_btm_15 { @include m-b(15px) }
+  .mrg_btm_20 { @include m-b(20px) }
+  .mrg_btm_30 { @include m-b(30px) }
+  .mrg_btm_50 { @include m-b(50px) }
+  
+  .mrg_top_10 { @include m-t(10px) }
+  .mrg_top_20 { @include m-t(20px) }
+  .mrg_top_30 { @include m-t(30px) }
+  .mrg_top_50 { @include m-t(50px) }  
+
+  .container_fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .d_none {display: none}
+  .d_inline {display: inline}
+  .block {display: block;}
+  
+  input[type=checkbox], input[type=radio] {
+    margin: 4px 5px 0 0 !important; 
+  }
+  input[type=checkbox] + label {color: $blue-text}
+
+  .grey_hr {border-top: 1px solid $lightgrey;}
+  
+  .grey_txt {color: $grey;}
+  
+  .page_url {
+    font-size: 1.5em;
+    padding-right: 8px;
+  }
+  .share_icon {
+    font-size: 1.5em;
+    vertical-align: middle;
+  }
+  .btn_primary {
+    background: $blue-text;
+    color: $white;
+    border-color: transparent;
+    padding: 10px 30px;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  .btn_default {
+    color: $blue-text;
+    border-color: $blue-text;
+    padding: 10px 30px;
+    border-radius: 4px;
+    font-size: 15px;
+  }
+  .btn_link {color: $blue-text}
+  
+  .mrg_top_imp {margin-top: 20px !important}
+
+  .border {@extend %border-class;}
+
+  .redborder {@extend %red-border-class;}
+
+  .blue_txt {
+    cursor: pointer;
+    color: $blue-text;    
+  }
+  .blue_txt_large {
+    cursor: pointer;
+    color: $blue-text;
+    font-weight: 600;
+    font-size: 1.4em;
+  }
+  .border_top_0 {border-top:0;}
+}
